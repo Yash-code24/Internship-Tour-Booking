@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Bookings · Admin · Voyagio</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body data-admin-page="bookings">
+<div class="loader" id="loader"><div class="loader__spinner"></div></div>
+<div class="admin">
+    <div data-partial="admin-sidebar" data-active="bookings"></div>
+    <main class="admin__main">
+        <div class="admin__head">
+            <div><h1>Manage Bookings</h1><p style="color:var(--color-text-muted);">Review customer bookings and update their status.</p></div>
+        </div>
+        <div class="table-wrap">
+            <div class="table-head"><h2>All bookings</h2></div>
+            <div class="table-scroll">
+                <table class="table">
+                    <thead><tr><th>Booking ID</th><th>Customer</th><th>Package</th><th>Travel Date</th><th>Status</th><th>Action</th></tr></thead>
+                    <tbody id="bookingsBody"><tr><td colspan="6" style="text-align:center;padding:2rem;">Loading...</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="../../assets/js/partials.js"></script>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/admin.js"></script>
+</body>
+</html>

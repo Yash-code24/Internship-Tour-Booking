@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Voyagio – Discover handpicked tour-packages and curated tour packages around the world." />
+    <title>Voyagio · Tour Packages & Tour Packages</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script defer src="https://kit.fontawesome.com/a2e0e6f2b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader"><div class="loader__spinner"></div></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav" aria-label="Primary">
+                <a href="index.html" class="nav__brand"><i class="fa-solid fa-plane-departure"></i> Voyagio</a>
+                <div class="nav__menu">
+                    <a href="index.html">Home</a>
+                    <a href="pages/about.html">About</a>
+                    <a href="pages/tour-packages.html">Tour Packages</a>
+                    <a href="pages/contact.html">Contact</a>
+                </div>
+                <div class="nav__actions">
+                    <a href="pages/login.html" class="btn btn--ghost btn--sm">Login</a>
+                    <a href="pages/register.html" class="btn btn--primary btn--sm">Sign Up</a>
+                    <button class="nav__toggle" id="navToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+        </div>
+        <div class="nav__mobile" id="navMobile">
+            <a href="index.html">Home</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/tour-packages.html">Tour Packages</a>
+            <a href="pages/contact.html">Contact</a>
+            <a href="pages/login.html">Login</a>
+            <a href="pages/register.html">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content animate-fade-up">
+                <span class="hero__eyebrow"><i class="fa-solid fa-sparkles"></i> Adventures await, book with confidence</span>
+                <h1 class="hero__title">Explore Amazing Tour Packages Across India.</h1>
+                <p class="hero__desc">Book affordable and memorable tour packages with ease.</p>
+                <div class="hero__actions">
+                    <a href="pages/tour-packages.html" class="btn btn--outline btn--lg" style="color:#fff;border-color:rgba(255,255,255,0.5);"><i class="fa-solid fa-mountain-sun"></i> Explore Tours</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Tour Packages -->
+    <section class="section" style="background:var(--color-surface-alt);" id="tours">
+        <div class="container">
+            <div class="section__head" data-reveal>
+                <span class="section__eyebrow">Curated journeys</span>
+                <h2 class="section__title">Popular Tour Packages</h2>
+                <p class="section__desc">All-inclusive itineraries designed by local guides.</p>
+            </div>
+            <div class="grid grid--3" id="homePackagesGrid">
+                <div id="homePackagesState" class="empty-state" style="grid-column:1/-1;text-align:center;padding:3rem 1rem;">
+                    <p>Loading tour packages...</p>
+                </div>
+            </div>
+            <div class="text-center mt-8"><a href="pages/tour-packages.html" class="btn btn--outline">View All Packages <i class="fa-solid fa-arrow-right"></i></a></div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+        <div class="container">
+            <div class="section__head" data-reveal>
+                <span class="section__eyebrow">Travel stories</span>
+                <h2 class="section__title">Loved by wanderers</h2>
+            </div>
+            <div class="grid grid--3">
+                <div class="testimonial" data-reveal>
+                    <p class="testimonial__quote">"Voyagio planned our honeymoon in Bali down to the last detail — and even sent a birthday cake on day three. Unmatched."</p>
+                    <div class="testimonial__user">
+                        <img class="testimonial__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200" alt="" />
+                        <div><div class="testimonial__name">Priya Ramanathan</div><div class="testimonial__role">Colombo · booked Bali Escape</div></div>
+                    </div>
+                </div>
+                <div class="testimonial" data-reveal>
+                    <p class="testimonial__quote">"I've used many booking sites — none felt this personal. The concierge answered at 3 a.m. when our flight rerouted."</p>
+                    <div class="testimonial__user">
+                        <img class="testimonial__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200" alt="" />
+                        <div><div class="testimonial__name">Marcus Alden</div><div class="testimonial__role">London · booked Iceland Odyssey</div></div>
+                    </div>
+                </div>
+                <div class="testimonial" data-reveal>
+                    <p class="testimonial__quote">"The Rainforest Lodge felt like a secret. Waterfalls, tea gardens, hummingbirds at breakfast. I'll be back."</p>
+                    <div class="testimonial__user">
+                        <img class="testimonial__avatar" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200" alt="" />
+                        <div><div class="testimonial__name">Aiko Tanaka</div><div class="testimonial__role">Tokyo · booked Kandy stay</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <a href="index.html" class="footer__brand"><i class="fa-solid fa-plane-departure"></i> Voyagio</a>
+                    <p class="footer__desc">Discover handpicked tour-packages and curated tour packages around the world. Travel confidently with Voyagio.</p>
+                    <div class="footer__socials">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer__title">Explore</h3>
+                    <ul class="footer__list">
+                        <li><a href="pages/tour-packages.html">Tour Packages</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Support</h3>
+                    <ul class="footer__list">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="pages/contact.html">Help Center</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Terms & Privacy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+                    <ul class="footer__list">
+                        <li><i class="fa-solid fa-location-dot"></i> 42 Palm Avenue, Colombo</li>
+                        <li><i class="fa-solid fa-phone"></i> +94 771 234 567</li>
+                        <li><i class="fa-solid fa-envelope"></i> hello@voyagio.travel</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; <span id="year">2025</span> Voyagio. All rights reserved.</p>
+                <p>Crafted for wanderers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="assets/js/home-packages.js"></script>
+</body>
+</html>

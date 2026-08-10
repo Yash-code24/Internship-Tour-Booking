@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact · Voyagio</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="loader__spinner"></div>
+    </div>
+    <div data-partial="header" data-level="1"></div>
+
+    <section class="page-head">
+        <div class="container">
+            <div class="page-head__inner">
+                <h1>Get in touch</h1>
+                <p><p>Have questions? Get in touch with us for any tour-related inquiries.</p></p>
+            </div>
+        </div>
+    </section>
+
+    <nav class="breadcrumb">
+        <div class="container">
+            <ol>
+                <li><a href="../index.html">Home</a></li>
+                <li class="breadcrumb__current">Contact</li>
+            </ol>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-layout">
+                <div>
+                    <div class="contact-info">
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <div class="contact-info__label">Head office</div>
+                                <div class="contact-info__value">42 Palm Avenue, Colombo 03, Sri Lanka</div>
+                            </div>
+                        </div>
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <div class="contact-info__label">Call us</div>
+                                <div class="contact-info__value">+94 771 234 567</div>
+                            </div>
+                        </div>
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-info__label">Email</div>
+                                <div class="contact-info__value">hello@voyagio.travel</div>
+                            </div>
+                        </div>
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <div class="contact-info__label">Hours</div>
+                                <div class="contact-info__value">Mon – Sat · 09:00 to 18:00 (IST)</div>
+                            </div>
+                        </div>                       
+                    </div>                   
+                </div>
+
+                <form class="form" data-form="contact" id="contactForm" name="contactForm">
+                    <h2 class="form__title">Send us a message</h2>
+                    <p class="form__subtitle"><p class="form__subtitle">Fill out the form and we'll contact you soon.</p> </p>
+                    <div class="form__row">
+                        <div class="form__group"><label class="form__label" for="cName">Full name</label><input
+                                class="form__control" id="cName" name="fullName" type="text" required /></div>
+                        <div class="form__group"><label class="form__label" for="cEmail">Email</label><input
+                                class="form__control" id="cEmail" name="email" type="email" required /></div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__group"><label class="form__label" for="cPhone">Mobile</label><input
+                                class="form__control" id="cPhone" name="mobile" type="tel" /></div>
+                        <!-- <div class="form__group"><label class="form__label" for="cSubject">Subject</label><input
+                                class="form__control" id="cSubject" name="subject" type="text" required /></div> -->
+                    </div>
+                    <div class="form__group"><label class="form__label" for="cMessage">Message</label><textarea
+                            class="form__control" id="cMessage" name="message" required minlength="10"></textarea></div>
+                    <div class="form__footer"><button type="submit" class="btn btn--primary btn--block btn--lg"><i
+                                class="fa-solid fa-paper-plane"></i> Send message</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div data-partial="footer" data-level="1"></div>
+    <script src="../assets/js/partials.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login · Voyagio</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body style="background:#0c1a1e;">
+    <div class="loader" id="loader">
+        <div class="loader__spinner"></div>
+    </div>
+
+    <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem;">
+        <form class="form" data-form="admin-login" id="adminLoginForm" name="adminLoginForm"
+            style="max-width:440px;width:100%;">
+            <div style="text-align:center;margin-bottom:1.5rem;">
+                <a href="../../index.html" class="nav__brand" style="justify-content:center;font-size:1.8rem;"><i
+                        class="fa-solid fa-plane-departure"></i> Voyagio</a>
+                <p style="color:var(--color-text-muted);margin-top:0.5rem;">Admin control panel</p>
+            </div>
+            <h1 class="form__title" style="font-size:1.5rem;text-align:center;">Admin Login</h1>
+            <p class="form__subtitle" style="text-align:center;">Enter your admin credentials.</p>
+            <div class="form__group"><label class="form__label" for="adminEmail">Admin email</label><input
+                    class="form__control" id="adminEmail" name="email" type="email" required
+                    placeholder="admin@voyagio.travel" /></div>
+            <div class="form__group"><label class="form__label" for="adminPassword">Password</label><input
+                    class="form__control" id="adminPassword" name="password" type="password" required /></div>
+            
+            <button type="submit" class="btn btn--primary btn--block btn--lg"><i class="fa-solid fa-lock"></i>
+                Login</button>
+            <p class="form__meta"><a href="../../index.html">← Back to site</a></p>
+        </form>
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account · Voyagio</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="loader__spinner"></div>
+    </div>
+    <div data-partial="header" data-level="1"></div>
+
+    <div class="auth">
+        <div class="auth__form-wrap">
+            <form class="form" data-form="register" id="registerForm" name="registerForm"
+                style="max-width:520px;margin:0 auto;">
+                <h1 class="form__title">Create your account</h1>
+                <p class="form__subtitle">Only takes a minute.</p>
+                <div class="form__row">
+                    <div class="form__group">
+                        <label class="form__label" for="fullName">Full Name</label>
+                        <input class="form__control" id="fullName" name="fullName" type="text" required/>
+                    </div>
+                </div>
+                <div class="form__group"><label class="form__label" for="regEmail">Email</label><input
+                        class="form__control" id="regEmail" name="email" type="email" required /></div>
+                <div class="form__group"><label class="form__label" for="regPhone">Mobile number</label><input
+                        class="form__control" id="regPhone" name="mobile" type="tel" required
+                        placeholder="+91 9876543210" /></div>
+                <div class="form__row">
+                    <div class="form__group"><label class="form__label" for="regPassword">Password</label><input
+                            class="form__control" id="regPassword" name="password" type="password" required
+                            minlength="6" /></div>
+                    <div class="form__group"><label class="form__label" for="regConfirm">Confirm password</label><input
+                            class="form__control" id="regConfirm" name="confirmPassword" type="password" required
+                            minlength="6" /></div>
+                </div>
+                <div class="form__group"><label
+                        style="display:flex;gap:0.5rem;font-size:0.85rem;color:var(--color-text-muted);"><input
+                            type="checkbox" required /> I agree to the Terms & Privacy Policy.</label>
+                </div>
+                <button type="submit" class="btn btn--primary btn--block btn--lg">Create account</button>
+                <p class="form__meta">Already have an account? <a href="login.html">Sign in</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div data-partial="footer" data-level="1"></div>
+    <script src="../assets/js/partials.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

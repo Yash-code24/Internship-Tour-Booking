@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Package Details · Voyagio</title>
+<link rel="stylesheet" href="../assets/css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+<div class="loader" id="loader"><div class="loader__spinner"></div></div>
+<div data-partial="header" data-level="1"></div>
+<nav class="breadcrumb"><div class="container"><ol>
+<li><a href="../index.html">Home</a></li><li><a href="tour-packages.html">Tour Packages</a></li>
+<li class="breadcrumb__current" id="packageBreadcrumb">Package Details</li>
+</ol></div></nav>
+<section class="details-hero" id="packageDetailsPage" hidden>
+<div class="container"><div class="gallery"><div class="gallery__main"><img id="packageImage" src="" alt="" /></div></div>
+<div class="details"><div class="details__body">
+<h1 id="packageName"></h1>
+<p class="details__loc"><i class="fa-solid fa-location-dot"></i> <span id="packageLocation"></span></p>
+<div class="details__section"><h2>Overview</h2><p id="packageDescription" style="color:var(--color-text-muted);"></p></div>
+<div class="details__section"><h2>Package Information</h2><ul class="incl-list">
+<li><i class="fa-solid fa-circle-check"></i> Destination: <span id="packageDestination"></span></li>
+<li><i class="fa-solid fa-circle-check"></i> Duration: <span id="packageDuration"></span></li>
+<li><i class="fa-solid fa-circle-check"></i> Category: <span id="packageCategory"></span></li>
+</ul></div>
+</div>
+<aside class="booking-widget"><div class="booking-widget__price"><strong>$<span id="packagePrice">0</span></strong> <span>per person</span></div>
+<a id="bookPackageLink" href="book-tour.html" class="btn btn--accent btn--block btn--lg mt-6"><i class="fa-solid fa-calendar-check"></i> Book This Tour</a>
+</aside></div></div></section>
+<section class="section" id="packageLoading"><div class="container" style="text-align:center;padding:3rem 1rem;"><p>Loading package details...</p></div></section>
+<div data-partial="footer" data-level="1"></div>
+<script src="../assets/js/partials.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/packages.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book Tour Package · Voyagio</title>
+<link rel="stylesheet" href="../assets/css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+<div class="loader" id="loader"><div class="loader__spinner"></div></div>
+<div data-partial="header" data-level="1"></div>
+
+<section class="page-head"><div class="container"><div class="page-head__inner">
+    <h1>Reserve Your Tour</h1><p>Bali Escape · 7 days / 6 nights with a private local guide.</p>
+</div></div></section>
+
+<nav class="breadcrumb"><div class="container"><ol><li><a href="../index.html">Home</a></li><li><a href="tour-packages.html">Packages</a></li><li><a href="package-details.html">Package Details</a></li><li class="breadcrumb__current">Book Tour</li></ol></div></nav>
+
+<section class="section">
+    <div class="container">
+        <form class="form" data-form="booking" id="tourBookingForm" name="tourBookingForm" style="max-width:800px;margin:0 auto;">
+            <h2 class="form__title">Traveller details</h2>
+            <p class="form__subtitle" id="bookingPackageSummary">Everyone on the booking, please.</p><input type="hidden" name="packageId" id="bookingPackageId" />
+            <div class="form__row">
+                <div class="form__group"><label class="form__label" for="btName">Lead traveller name</label><input class="form__control" id="btName" name="fullName" type="text" required /></div>
+                <div class="form__group"><label class="form__label" for="btEmail">Email</label><input class="form__control" id="btEmail" name="email" type="email" required /></div>
+            </div>
+            <div class="form__row">
+                <div class="form__group"><label class="form__label" for="btPhone">Mobile number</label><input class="form__control" id="btPhone" name="mobile" type="tel" required /></div>
+                <!-- <div class="form__group"><label class="form__label" for="btNationality">Nationality</label><input class="form__control" id="btNationality" name="nationality" type="text" required /></div> -->
+            </div>
+
+            <h2 class="form__title mt-8">Trip details</h2>
+            <div class="form__row">
+                <div class="form__group"><label class="form__label" for="btStart">Preferred start date</label><input class="form__control" id="btStart" name="startDate" type="date" required /></div>
+                <div class="form__group"><label class="form__label" for="btAdults">Adults</label><input class="form__control" id="btAdults" name="adults" type="number" min="1" value="2" required /></div>
+            </div>
+            <div class="form__row">
+                <div class="form__group"><label class="form__label" for="btChildren">Children</label><input class="form__control" id="btChildren" name="children" type="number" min="0" value="0" /></div>
+                <div class="form__group"><label class="form__label" for="btRooms">Rooms</label><input class="form__control" id="btRooms" name="rooms" type="number" min="1" value="1" required /></div>
+            </div>
+            <div class="form__group"><label class="form__label" for="btRequests">Special requests</label><textarea class="form__control" id="btRequests" name="requests" placeholder="Dietary restrictions, celebrations, accessibility needs..."></textarea></div>
+
+            <div class="form__footer"><button type="submit" class="btn btn--accent btn--block btn--lg"><i class="fa-solid fa-lock"></i> Confirm Reservation</button></div>
+        </form>
+    </div>
+</section>
+
+<div data-partial="footer" data-level="1"></div>
+<script src="../assets/js/partials.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/packages.js"></script>
+</body></html>

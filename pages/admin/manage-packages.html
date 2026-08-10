@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Packages · Admin · Voyagio</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body data-admin-page="packages">
+<div class="loader" id="loader"><div class="loader__spinner"></div></div>
+<div class="admin">
+    <div data-partial="admin-sidebar" data-active="packages"></div>
+    <main class="admin__main">
+        <div class="admin__head">
+            <div><h1>Manage Tour Packages</h1><p style="color:var(--color-text-muted);">Add, edit, activate or remove tour packages from the database.</p></div>
+            <button class="btn btn--primary" data-add-package><i class="fa-solid fa-plus"></i> Add Package</button>
+        </div>
+        <div class="table-wrap">
+            <div class="table-head"><h2>All packages</h2></div>
+            <div class="table-scroll">
+                <table class="table">
+                    <thead><tr><th>Code</th><th>Package</th><th>Destination</th><th>Duration</th><th>Category</th><th>Price</th><th>Status</th><th>Actions</th></tr></thead>
+                    <tbody id="packagesBody"><tr><td colspan="8" style="text-align:center;padding:2rem;">Loading...</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="../../assets/js/partials.js"></script>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/admin.js"></script>
+</body>
+</html>

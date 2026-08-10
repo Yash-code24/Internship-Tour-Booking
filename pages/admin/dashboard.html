@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard · Admin · Voyagio</title>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body data-admin-page="dashboard">
+<div class="loader" id="loader"><div class="loader__spinner"></div></div>
+<div class="admin">
+    <div data-partial="admin-sidebar" data-active="dashboard"></div>
+    <main class="admin__main">
+        <div class="admin__head">
+            <div><h1>Dashboard</h1><p style="color:var(--color-text-muted);">Welcome back, <span data-admin-name>Admin</span>. Here's your tour booking overview.</p></div>
+        </div>
+        <div class="grid grid--4 mb-6">
+            <div class="stat"><div class="stat__icon stat__icon--teal"><i class="fa-solid fa-users"></i></div><div class="stat__label">Total Users</div><div class="stat__value" data-stat="users">—</div></div>
+            <div class="stat"><div class="stat__icon stat__icon--orange"><i class="fa-solid fa-map-location-dot"></i></div><div class="stat__label">Tour Packages</div><div class="stat__value" data-stat="packages">—</div></div>
+            <div class="stat"><div class="stat__icon stat__icon--green"><i class="fa-solid fa-calendar-check"></i></div><div class="stat__label">Bookings</div><div class="stat__value" data-stat="bookings">—</div></div>
+            <div class="stat"><div class="stat__icon stat__icon--blue"><i class="fa-regular fa-square-envelope"></i></div><div class="stat__label">Unread Messages</div><div class="stat__value" data-stat="messages">—</div></div>
+        </div>
+        <div class="table-wrap mt-8">
+            <div class="table-head"><h2>Recent bookings</h2><a href="manage-bookings.html" class="btn btn--outline btn--sm">View all</a></div>
+            <div class="table-scroll">
+                <table class="table">
+                    <thead><tr><th>Booking ID</th><th>Customer</th><th>Package</th><th>Travel Date</th><th>Status</th><th>Action</th></tr></thead>
+                    <tbody id="recentBookingsBody"><tr><td colspan="6" style="text-align:center;padding:2rem;">Loading...</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="../../assets/js/partials.js"></script>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/admin.js"></script>
+</body>
+</html>
