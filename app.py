@@ -20,8 +20,12 @@ DB_CONFIG = {
     'user': os.environ.get('DB_USER', 'root'),
     'password': os.environ.get('DB_PASSWORD', ''),
     'database': os.environ.get('DB_NAME', 'voyagio'),
+    'port': int(os.environ.get('DB_PORT', '3306')),
     'cursorclass': pymysql.cursors.DictCursor,
     'autocommit': True,
+    'ssl': {
+        'ca': os.path.join(BASE_DIR, 'ca.pem')
+    }
 }
 
 
