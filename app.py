@@ -579,3 +579,26 @@ def health():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+@app.route('/api/db-network-test')
+def db_network_test():
+    import socket
+
+    host = os.environ.get('DB_HOST')
+    port = int(os.environ.get('DB_PORT', 3306))
+
+    try:
+        sock = socket.create_connection((host, port), timeout=10)
+        sock.close()
+
+        return jsonify({
+            "success": True,
+            "message": "Render can reach Aiven MySQL"
+        })
+
+    except Exception as e:
+        return jsonify({
+            "success": False,
+            "message": str(e)
+        }), 500
